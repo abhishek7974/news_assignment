@@ -36,6 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ? GestureDetector(
                   onTap: () {
                     newsProvider.toggleSearch();
+                    newsProvider.fetchNews(context);
                   },
                   child: Icon(Icons.arrow_back_ios))
               : null,
